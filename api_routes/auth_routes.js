@@ -10,8 +10,12 @@ Auth_Routes.use(json());
 
 
 Auth_Routes.post("/login",LoginController);
-Auth_Routes.get("/verify",verifyToken,(req,res)=>{
-    res.send(req.user)
+Auth_Routes.get("/verify-token",verifyToken,(req,res)=>{
+    res.send(
+        {
+            role:req.user.role,
+        }
+    )
 })
 
 

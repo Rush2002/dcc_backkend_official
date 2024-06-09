@@ -87,7 +87,4 @@ Project_Route.get("/get-project-by-id/:projectID",verifyToken,AccessControl.isAd
 
 
 
-
-
-
 export default Project_Route

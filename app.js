@@ -24,7 +24,7 @@ app.use("/assign",SiteEng_Project_Route)
 app.use("/schedule",Schedule_Routes)
 
 // addDATA();
-// await  createUser("admin",{name:"rushikesh choudhari",email:"rushikeshchoudhari0374@gmail.com",mobile_no:"9373070374",password: await bcrypt.hash("rushi",10),address:"at paithan"})
+// await  createUser("admin",{name:"rushikesh choudhari",email:"admin@gmail.com",mobile_no:"9373070374",password: await bcrypt.hash("admin",10),address:"at paithan"})
 
 app.use((err, req, res, next) => {
     res.status(500).send();
