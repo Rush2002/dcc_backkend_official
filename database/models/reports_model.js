@@ -14,6 +14,10 @@ const ReportsModel = mongoose.model(
     )
 )
 
+const Hes () => {
+    return "Hello"
+}
+
 
 const CementReportModel = ReportsModel.discriminator(
     "cement",
